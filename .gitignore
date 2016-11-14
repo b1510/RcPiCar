@@ -1,6 +1,12 @@
-.idea
-.idea/*
-/.idea/
+######################
+# Intellij
+######################
+.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
 
 
 # Byte-compiled / optimized / DLL files
