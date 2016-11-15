@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>RC Pi Car</title>
@@ -9,22 +9,45 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/rcpicar.css">
 </head>
 <body>
-<div id="conteneur">
-    <button type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
+<div class="conteneur">
+    <button id="up" type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
     <!--<a class="btn btn-primary btn-block element" href="#" role="button">UP</a>-->
 </div>
-<div id="conteneur">
-    <button type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></button>
+<div class="conteneur">
+    <button id="left" type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></button>
     <div class="element"></div>
-    <button type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+    <button id="right" type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
 </div>
-<div id="conteneur">
-    <button type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+<div class="conteneur">
+    <button id="down" type="button" class="btn btn-primary element"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
 </div>
 </body>
 </html>
+
+<script>
+    $('#up').on('mousedown', function () {
+        console.log('Avance');
+//        $(this).button('complete') // button text will be "finished!"
+    })
+    $('#down').on('mousedown', function () {
+        console.log('Recule');
+    })
+    $('#right').on('mousedown', function () {
+        console.log('Tourne à droite');
+    })
+    $('#left').on('mousedown', function () {
+        console.log('Tourne à gauche');
+    })
+    $('#up, #left, #right, #down').on('mouseup', function () {
+        console.log('Stop');
+    })
+</script>
