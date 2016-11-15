@@ -9,7 +9,10 @@
 
 .element
 {
-    background-color: pink;
     height: 100%;
-    width: 100%;
+    width: 33%;
+}
+
+.element .glyphicon {
+    font-size: 150px;
 }
