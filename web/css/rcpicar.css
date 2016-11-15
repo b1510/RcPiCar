@@ -3,41 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-#conteneur_ligne
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 33vh;
     flex-direction: row;
 }
 
 .element
 {
     background-color: pink;
-    height: 150px;
-    width: 300px;
-}
-
-.element:nth-child(1)
-{
-    background-color: aqua;
-}
-.element:nth-child(2)
-{
-    background-color: brown;
-}
-.element:nth-child(3)
-{
-    background-color: darkgreen;
-}
-.element:nth-child(4)
-{
-    background-color: gold;
-}
-.element:nth-child(5)
-{
-    background-color: darkviolet;
+    height: 100%;
+    width: 100%;
 }
